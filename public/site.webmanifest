@@ -1,0 +1,10 @@
+{
+  "name": "Frida Leal Barber",
+  "short_name": "Frida Leal",
+  "lang": "es-MX",
+  "start_url": ".",
+  "display": "browser",
+  "background_color": "#0b0a09",
+  "theme_color": "#0b0a09",
+  "icons": [{ "src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }]
+}
