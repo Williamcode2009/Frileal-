@@ -1,0 +1,30 @@
+{
+  "name": "frida-leal-barber",
+  "version": "1.0.0",
+  "description": "Sitio web de Frida Leal Barber · Barbería Leal, Izamal, Yucatán.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Williamcode2009/Frileal-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Williamcode2009/Frileal-/issues"
+  },
+  "homepage": "https://github.com/Williamcode2009/Frileal-#readme",
+  "dependencies": {
+    "@fontsource-variable/bodoni-moda": "^5.3.0",
+    "@fontsource-variable/instrument-sans": "^5.3.0",
+    "gsap": "^3.15.1",
+    "lenis": "^1.3.27",
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "vite": "^8.3.8"
+  },
+  "private": true,
+  "type": "module"
+}
