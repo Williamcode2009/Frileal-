@@ -40,8 +40,8 @@ Busca estos comentarios en `index.html`:
    fotos nuevas, agrégalas a `TILES` en `scripts/optimizar-imagenes.py` (o guarda cuadrados de 360 px
    como `public/img/esfera-N.webp`) y cambia el `src` de los botones `sphere__tile`.
 3. **Facebook** — el enlace del pie apunta a una búsqueda; cámbialo por la URL exacta de la página.
-4. **Dominio** — al publicar, cambia `og:image` a la URL absoluta
-   (ej. `https://tudominio.com/img/og.jpg`) para que la vista previa aparezca al compartir.
+4. **Dominio** — `og:url`, `og:image` y el `canonical` apuntan a
+   `https://williamcode2009.github.io/Frileal-/`. Si usas otro dominio, cámbialos en `index.html`.
 
 ## Publicar
 

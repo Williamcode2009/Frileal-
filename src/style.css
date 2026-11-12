@@ -1263,6 +1263,19 @@ body.menu-open .nav {
   white-space: nowrap;
   will-change: transform;
 }
+.tools__labels .is-left {
+  display: none;
+  flex-direction: row-reverse;
+  translate: -100% 0;
+}
+@media (min-width: 900px) {
+  .tools__labels .is-left {
+    display: flex;
+  }
+}
+.tools__labels .is-left i::before {
+  margin-left: auto;
+}
 .tools__labels i {
   width: clamp(1.5rem, 5vw, 5rem);
   height: 1px;
