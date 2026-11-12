@@ -6,9 +6,9 @@
     <title>Frida Leal Barber — Barbería clásica en Izamal, Yucatán</title>
     <meta
       name="description"
-      content="Frida Leal Barber · Barbería Leal. Cortes clásicos, fades, estilo neotradicional y cuidado de barba en el Centro de Izamal, Yucatán. 5.0 en Google. Agenda tu cita por WhatsApp."
+      content="Frida Leal Barber · Barbería Leal. Corte clásico o moderno, afeitado tradicional y toalla caliente en el Centro de Izamal, Yucatán. Paquetes desde $135. 5.0 en Google. Agenda por WhatsApp."
     />
-    <meta name="theme-color" content="#0b0a09" />
+    <meta name="theme-color" content="#efe8dc" />
     <meta name="format-detection" content="telephone=no" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -28,16 +28,6 @@
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Frida Leal, propietaria de Barbería Leal, apoyada en un sillón de barbero." />
     <meta name="twitter:card" content="summary_large_image" />
-
-    <link
-      rel="preload"
-      as="image"
-      type="image/webp"
-      href="/img/frida-bn-960.webp"
-      imagesrcset="/img/frida-bn-640.webp 640w, /img/frida-bn-960.webp 960w, /img/frida-bn-1179.webp 1179w"
-      imagesizes="(min-width: 900px) 46vw, 100vw"
-      fetchpriority="high"
-    />
 
     <script>
       document.documentElement.classList.add('js');
@@ -75,16 +65,17 @@
           { "@type": "LocationFeatureSpecification", "name": "Estacionamiento", "value": true },
           { "@type": "LocationFeatureSpecification", "name": "Bebidas de cortesía", "value": true }
         ],
+        "priceRange": "$135–$200 MXN",
         "sameAs": ["https://www.instagram.com/fridaleal1997/", "https://www.tiktok.com/@la_fri_leal_"]
       }
     </script>
   </head>
 
-  <body class="theme-dark">
+  <body class="theme-light">
     <a class="skip" href="#contenido">Saltar al contenido</a>
 
     <div class="preloader" aria-hidden="true">
-      <span class="preloader__mark">Frida Leal <em>Barber</em></span>
+      <span class="preloader__mark"><i class="minipole"></i>Frida Leal <em>Barber</em></span>
       <span class="preloader__count">000</span>
     </div>
 
@@ -96,7 +87,7 @@
         <span>Frida Leal</span><i aria-hidden="true"></i><span class="nav__brand-sub">Barber</span>
       </a>
       <nav class="nav__links" aria-label="Principal">
-        <a href="#servicios"><span>Servicios</span></a>
+        <a href="#servicios"><span>Paquetes</span></a>
         <a href="#galeria"><span>Galería</span></a>
         <a href="#estudio"><span>Estudio</span></a>
         <a href="#visita"><span>Visita</span></a>
@@ -116,7 +107,7 @@
 
     <div class="menu" id="menu" data-menu hidden>
       <nav class="menu__links" aria-label="Menú móvil">
-        <a href="#servicios"><small>01</small><span>Servicios</span></a>
+        <a href="#servicios"><small>01</small><span>Paquetes</span></a>
         <a href="#galeria"><small>02</small><span>Galería</span></a>
         <a href="#estudio"><small>03</small><span>Estudio</span></a>
         <a href="#visita"><small>04</small><span>Visita</span></a>
@@ -139,50 +130,42 @@
 
     <main id="contenido">
       <!-- ═════════ HERO ═════════ -->
-      <section class="hero" id="inicio" data-theme="dark">
-        <div class="hero__media" data-hero-media>
-          <picture>
-            <source
-              type="image/webp"
-              srcset="/img/frida-bn-640.webp 640w, /img/frida-bn-960.webp 960w, /img/frida-bn-1179.webp 1179w"
-              sizes="(min-width: 900px) 46vw, 100vw"
-            />
-            <img
-              src="/img/frida-bn.jpg"
-              width="1179"
-              height="1460"
-              alt="Frida Leal, propietaria de la barbería, con maquillaje de media calavera, apoyada sobre el respaldo de un sillón de barbero."
-              fetchpriority="high"
-              decoding="async"
-            />
+      <section class="hero" id="inicio" data-theme="light" aria-label="Frida Leal Barber">
+        <div class="hero__stage">
+          <canvas class="hero__canvas" data-pole aria-hidden="true"></canvas>
+          <picture class="hero__fallback">
+            <source type="image/webp" srcset="/img/frida-bn-640.webp 640w, /img/frida-bn-960.webp 960w" sizes="(min-width: 900px) 40vw, 100vw" />
+            <img src="/img/frida-bn.jpg" width="1179" height="1460" loading="lazy" decoding="async" alt="" />
           </picture>
-        </div>
 
-        <div class="hero__inner">
-          <p class="hero__eyebrow" data-hero-fade><i aria-hidden="true"></i>Barbería clásica — Izamal, Yucatán</p>
-
-          <div class="hero__copy">
+          <div class="hero__step hero__step--intro" data-step="0">
+            <p class="hero__eyebrow" data-hero-fade><i aria-hidden="true"></i>Barbería clásica — Izamal, Yucatán</p>
+            <h1 class="hero__title" aria-label="Frida Leal Barber">
+              <span class="hero__name" data-hero-name aria-hidden="true">Frida Leal</span>
+              <span class="hero__barber" data-hero-fade aria-hidden="true">Barber</span>
+            </h1>
             <p class="hero__tag" data-hero-tag>Leal al <em>oficio.</em></p>
-            <p class="hero__sub" data-hero-fade>
-              Cortes clásicos, fades y barba trabajados con pulso, criterio y sin prisa. Una silla, toda la atención.
-            </p>
             <div class="hero__actions" data-hero-fade>
-              <a
-                class="btn btn--accent"
-                href="https://wa.me/529991022110?text=Hola%20Frida%2C%20quiero%20agendar%20una%20cita."
-                target="_blank"
-                rel="noopener"
-                ><span>Reservar cita</span
-                ><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg
-              ></a>
-              <a class="link" href="#servicios">Ver servicios</a>
+              <a class="btn btn--accent" href="https://wa.me/529991022110?text=Hola%20Frida%2C%20quiero%20agendar%20una%20cita." target="_blank" rel="noopener"><span>Reservar cita</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+              <a class="link" href="#servicios">Ver paquetes</a>
             </div>
           </div>
 
-          <h1 class="hero__title" aria-label="Frida Leal Barber">
-            <span class="hero__name" data-hero-name aria-hidden="true">Frida Leal</span>
-            <span class="hero__barber" data-hero-fade aria-hidden="true">Barber</span>
-          </h1>
+          <div class="hero__step hero__step--side" data-step="1">
+            <p class="hero__big"><b>5.0</b> en Google.</p>
+            <p class="hero__small">La calificación más alta, en 21 reseñas.</p>
+          </div>
+
+          <div class="hero__step hero__step--side" data-step="2">
+            <p class="hero__big">Corte, barba y <em>navaja.</em></p>
+            <p class="hero__small">Cuatro paquetes, desde $135.</p>
+          </div>
+
+          <div class="hero__step hero__step--end" data-step="3">
+            <p class="hero__end">Sigues <em>tú.</em></p>
+            <p class="hero__small">Lunes a sábado en el Centro de Izamal.</p>
+            <a class="btn btn--accent btn--big" href="https://wa.me/529991022110?text=Hola%20Frida%2C%20quiero%20agendar%20una%20cita." target="_blank" rel="noopener"><span>Reservar cita</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          </div>
 
           <div class="hero__meta" data-hero-fade>
             <span><b>5.0</b> ★ en Google · 21 reseñas</span>
@@ -195,8 +178,8 @@
       <!-- ═════════ CINTA ═════════ -->
       <div class="marquee" aria-hidden="true" data-theme="light">
         <div class="marquee__track" data-marquee>
-          <span>Corte clásico <i>✦</i> Fade <i>✦</i> Neotradicional <i>✦</i> Barba <i>✦</i> Izamal, Yucatán <i>✦</i>&nbsp;</span>
-          <span>Corte clásico <i>✦</i> Fade <i>✦</i> Neotradicional <i>✦</i> Barba <i>✦</i> Izamal, Yucatán <i>✦</i>&nbsp;</span>
+          <span>Corte clásico <i>✦</i> Corte moderno <i>✦</i> Afeitado tradicional <i>✦</i> Toalla caliente <i>✦</i> Izamal, Yucatán <i>✦</i>&nbsp;</span>
+          <span>Corte clásico <i>✦</i> Corte moderno <i>✦</i> Afeitado tradicional <i>✦</i> Toalla caliente <i>✦</i> Izamal, Yucatán <i>✦</i>&nbsp;</span>
         </div>
       </div>
 
@@ -229,20 +212,20 @@
           <picture>
             <source
               type="image/webp"
-              srcset="/img/frida-color-640.webp 640w, /img/frida-color-960.webp 960w, /img/frida-color-1179.webp 1179w"
+              srcset="/img/frida-bn-640.webp 640w, /img/frida-bn-960.webp 960w, /img/frida-bn-1179.webp 1179w"
               sizes="(min-width: 900px) 42vw, 88vw"
             />
             <img
-              src="/img/frida-color.jpg"
+              src="/img/frida-bn.jpg"
               width="1179"
-              height="1493"
+              height="1460"
               loading="lazy"
               decoding="async"
               data-parallax
-              alt="Frida Leal en su estudio, con maquillaje de calavera, apoyada en el sillón de barbero donde descansa un gato negro."
+              alt="Frida Leal, propietaria de la barbería, con maquillaje de media calavera, apoyada sobre el respaldo de un sillón de barbero."
             />
           </picture>
-          <figcaption>Frida Leal — en su estudio, Izamal</figcaption>
+          <figcaption>Frida Leal — propietaria, Barbería Leal</figcaption>
         </figure>
 
         <div class="owner__body">
@@ -264,179 +247,137 @@
         <span class="owner__ghost" aria-hidden="true" data-drift>Leal</span>
       </section>
 
-      <!-- ═════════ SERVICIOS ═════════ -->
-      <section class="services" id="servicios" data-theme="dark" aria-labelledby="servicios-t">
-        <header class="services__head">
-          <p class="label" data-reveal><span>03</span> Servicios</p>
-          <h2 class="display display--xl" id="servicios-t" data-lines>El <em>repertorio.</em></h2>
-        </header>
-
-        <!--
-          PRECIOS: el negocio aún no los ha proporcionado.
-          Sustituye el texto "Consultar" de cada <span class="service__price"> por el precio real (ej. "$150").
-        -->
-        <ul class="services__list">
-          <li class="service" data-service>
-            <span class="service__num">01</span>
-            <h3 class="service__name">Corte clásico</h3>
-            <p class="service__desc">Tijera, peine y líneas limpias. El corte de siempre, hecho como se debe.</p>
-            <span class="service__price"><small>Precio</small>Consultar</span>
-            <a
-              class="service__cta"
-              href="https://wa.me/529991022110?text=Hola%20Frida%2C%20quiero%20agendar%20un%20corte%20cl%C3%A1sico."
-              target="_blank"
-              rel="noopener"
-              aria-label="Agendar corte clásico por WhatsApp"
-              ><span>Agendar</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9" /></svg
-            ></a>
-          </li>
-          <li class="service" data-service>
-            <span class="service__num">02</span>
-            <h3 class="service__name">Fade</h3>
-            <p class="service__desc">Degradado preciso, de la piel al volumen, con transiciones sin costuras.</p>
-            <span class="service__price"><small>Precio</small>Consultar</span>
-            <a
-              class="service__cta"
-              href="https://wa.me/529991022110?text=Hola%20Frida%2C%20quiero%20agendar%20un%20fade."
-              target="_blank"
-              rel="noopener"
-              aria-label="Agendar fade por WhatsApp"
-              ><span>Agendar</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9" /></svg
-            ></a>
-          </li>
-          <li class="service" data-service>
-            <span class="service__num">03</span>
-            <h3 class="service__name">Neotradicional</h3>
-            <p class="service__desc">Formas clásicas reinterpretadas con carácter actual. Un corte con firma.</p>
-            <span class="service__price"><small>Precio</small>Consultar</span>
-            <a
-              class="service__cta"
-              href="https://wa.me/529991022110?text=Hola%20Frida%2C%20quiero%20agendar%20un%20corte%20neotradicional."
-              target="_blank"
-              rel="noopener"
-              aria-label="Agendar corte neotradicional por WhatsApp"
-              ><span>Agendar</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9" /></svg
-            ></a>
-          </li>
-          <li class="service" data-service>
-            <span class="service__num">04</span>
-            <h3 class="service__name">Barba</h3>
-            <p class="service__desc">Perfilado, rebaje y cuidado para una barba definida y bien llevada.</p>
-            <span class="service__price"><small>Precio</small>Consultar</span>
-            <a
-              class="service__cta"
-              href="https://wa.me/529991022110?text=Hola%20Frida%2C%20quiero%20agendar%20un%20servicio%20de%20barba."
-              target="_blank"
-              rel="noopener"
-              aria-label="Agendar servicio de barba por WhatsApp"
-              ><span>Agendar</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9" /></svg
-            ></a>
-          </li>
-        </ul>
-
-        <p class="services__note" data-reveal>
-          Los precios se confirman al agendar. Se acepta tarjeta de débito y pago móvil sin contacto (NFC).
-        </p>
-      </section>
-
       <!-- ═════════ GALERÍA ═════════ -->
-      <section class="gallery" id="galeria" data-theme="light" aria-labelledby="galeria-t">
-        <header class="gallery__head">
-          <p class="label" data-reveal><span>04</span> Galería</p>
-          <h2 class="display display--xl" id="galeria-t" data-lines>Retratos <em>del oficio.</em></h2>
-        </header>
-
-        <div class="gallery__grid">
-          <figure class="shot shot--a">
-            <button type="button" class="shot__frame" data-clip data-zoom="img/frida-bn.jpg" data-w="1179" data-h="1460">
-              <picture>
-                <source
-                  type="image/webp"
-                  srcset="/img/frida-bn-640.webp 640w, /img/frida-bn-960.webp 960w, /img/frida-bn-1179.webp 1179w"
-                  sizes="(min-width: 900px) 46vw, 88vw"
-                />
-                <img src="/img/frida-bn.jpg" width="1179" height="1460" loading="lazy" decoding="async" data-parallax alt="Retrato en blanco y negro de Frida Leal con maquillaje de media calavera, tras un sillón de barbero." />
-              </picture>
-            </button>
-            <figcaption><span>N.º 01</span>Frida Leal, retrato</figcaption>
-          </figure>
-
-          <figure class="shot shot--b">
-            <button type="button" class="shot__frame" data-clip data-zoom="img/detalle-manos.jpg" data-w="560" data-h="420">
-              <picture>
-                <source type="image/webp" srcset="/img/detalle-manos-560.webp" />
-                <img src="/img/detalle-manos.jpg" width="560" height="420" loading="lazy" decoding="async" data-parallax alt="Detalle de manos tatuadas con anillos sobre el respaldo de cuero del sillón." />
-              </picture>
-            </button>
-            <figcaption><span>N.º 02</span>Manos de oficio</figcaption>
-          </figure>
-
-          <figure class="shot shot--c">
-            <button type="button" class="shot__frame" data-clip data-zoom="img/detalle-gato.jpg" data-w="619" data-h="533">
-              <picture>
-                <source type="image/webp" srcset="/img/detalle-gato-619.webp" />
-                <img src="/img/detalle-gato.jpg" width="619" height="533" loading="lazy" decoding="async" data-parallax alt="Gato negro recostado en el asiento del sillón de barbero." />
-              </picture>
-            </button>
-            <figcaption><span>N.º 03</span>El guardián de la silla</figcaption>
-          </figure>
-
-          <figure class="shot shot--d">
-            <button type="button" class="shot__frame" data-clip data-zoom="img/frida-color.jpg" data-w="1179" data-h="1493">
-              <picture>
-                <source
-                  type="image/webp"
-                  srcset="/img/frida-color-640.webp 640w, /img/frida-color-960.webp 960w, /img/frida-color-1179.webp 1179w"
-                  sizes="(min-width: 900px) 46vw, 88vw"
-                />
-                <img src="/img/frida-color.jpg" width="1179" height="1493" loading="lazy" decoding="async" data-parallax alt="Frida Leal en el estudio con luz de tarde, junto al sillón y un gato negro." />
-              </picture>
-            </button>
-            <figcaption><span>N.º 04</span>El estudio, luz de tarde</figcaption>
-          </figure>
-
-          <!-- ESPACIO TEMPORAL: sustituir por una foto real de un corte (ver README, sección "Fotos"). -->
-          <figure class="shot shot--e">
-            <div class="shot__frame shot__frame--empty" data-clip>
-              <span>Corte<br /><em>N.º 05</em></span>
-              <small>Fotografía próximamente</small>
-            </div>
-            <figcaption><span>N.º 05</span>Espacio reservado</figcaption>
-          </figure>
-
-          <figure class="shot shot--f">
-            <button type="button" class="shot__frame" data-clip data-zoom="img/detalle-espejo.jpg" data-w="619" data-h="700">
-              <picture>
-                <source type="image/webp" srcset="/img/detalle-espejo-619.webp" />
-                <img src="/img/detalle-espejo.jpg" width="619" height="700" loading="lazy" decoding="async" data-parallax alt="Espejo del estudio con focos y una ventana reflejada." />
-              </picture>
-            </button>
-            <figcaption><span>N.º 06</span>Espejo y luz</figcaption>
-          </figure>
-
-          <!-- ESPACIO TEMPORAL: sustituir por una foto real de un corte (ver README, sección "Fotos"). -->
-          <figure class="shot shot--g">
-            <div class="shot__frame shot__frame--empty" data-clip>
-              <span>Fade<br /><em>N.º 07</em></span>
-              <small>Fotografía próximamente</small>
-            </div>
-            <figcaption><span>N.º 07</span>Espacio reservado</figcaption>
-          </figure>
+      <section class="sphere" id="galeria" data-theme="dark" aria-labelledby="galeria-t">
+        <p class="label sphere__label" data-reveal><span>03</span> Galería</p>
+        <div class="sphere__wrap">
+          <h2 class="sphere__title" id="galeria-t">Carácter<br /><em>en cada corte.</em></h2>
+        <div class="sphere__stage" data-sphere>
+          <!-- Las fotos de la esfera son recortes de las dos fotos reales. Para añadir más: public/img/esfera-N.webp -->
+          <div class="sphere__rot" data-sphere-rot>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-bn.jpg" data-w="1179" data-h="1460" data-cap="Frida Leal, retrato"><img src="/img/esfera-1.webp" width="360" height="360" loading="lazy" decoding="async" alt="Retrato en blanco y negro de Frida Leal" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-color.jpg" data-w="1179" data-h="1493" data-cap="Frida Leal, perfil"><img src="/img/esfera-5.webp" width="360" height="360" loading="lazy" decoding="async" alt="Frida Leal de perfil con maquillaje de calavera" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-color.jpg" data-w="1179" data-h="1493" data-cap="El estudio"><img src="/img/esfera-9.webp" width="360" height="360" loading="lazy" decoding="async" alt="Focos y espejo del estudio" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-bn.jpg" data-w="1179" data-h="1460" data-cap="Espejo y focos"><img src="/img/esfera-4.webp" width="360" height="360" loading="lazy" decoding="async" alt="Frida Leal frente al espejo iluminado" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-color.jpg" data-w="1179" data-h="1493" data-cap="Luz de tarde"><img src="/img/esfera-8.webp" width="360" height="360" loading="lazy" decoding="async" alt="Ventana del estudio con luz de tarde" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-bn.jpg" data-w="1179" data-h="1460" data-cap="El sillón"><img src="/img/esfera-3.webp" width="360" height="360" loading="lazy" decoding="async" alt="Respaldo de cuero del sillón de barbero" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-color.jpg" data-w="1179" data-h="1493" data-cap="Reloj y tinta"><img src="/img/esfera-7.webp" width="360" height="360" loading="lazy" decoding="async" alt="Mano tatuada con reloj sobre el sillón" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-bn.jpg" data-w="1179" data-h="1460" data-cap="Manos de oficio"><img src="/img/esfera-2.webp" width="360" height="360" loading="lazy" decoding="async" alt="Manos tatuadas sobre el respaldo del sillón" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-color.jpg" data-w="1179" data-h="1493" data-cap="El guardián de la silla"><img src="/img/esfera-6.webp" width="360" height="360" loading="lazy" decoding="async" alt="Gato negro recostado en el sillón" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-bn.jpg" data-w="1179" data-h="1460" data-cap="Frida Leal, retrato"><img src="/img/esfera-1.webp" width="360" height="360" loading="lazy" decoding="async" alt="Retrato en blanco y negro de Frida Leal" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-color.jpg" data-w="1179" data-h="1493" data-cap="Frida Leal, perfil"><img src="/img/esfera-5.webp" width="360" height="360" loading="lazy" decoding="async" alt="Frida Leal de perfil con maquillaje de calavera" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-color.jpg" data-w="1179" data-h="1493" data-cap="El estudio"><img src="/img/esfera-9.webp" width="360" height="360" loading="lazy" decoding="async" alt="Focos y espejo del estudio" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-bn.jpg" data-w="1179" data-h="1460" data-cap="Espejo y focos"><img src="/img/esfera-4.webp" width="360" height="360" loading="lazy" decoding="async" alt="Frida Leal frente al espejo iluminado" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-color.jpg" data-w="1179" data-h="1493" data-cap="Luz de tarde"><img src="/img/esfera-8.webp" width="360" height="360" loading="lazy" decoding="async" alt="Ventana del estudio con luz de tarde" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-bn.jpg" data-w="1179" data-h="1460" data-cap="El sillón"><img src="/img/esfera-3.webp" width="360" height="360" loading="lazy" decoding="async" alt="Respaldo de cuero del sillón de barbero" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-color.jpg" data-w="1179" data-h="1493" data-cap="Reloj y tinta"><img src="/img/esfera-7.webp" width="360" height="360" loading="lazy" decoding="async" alt="Mano tatuada con reloj sobre el sillón" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-bn.jpg" data-w="1179" data-h="1460" data-cap="Manos de oficio"><img src="/img/esfera-2.webp" width="360" height="360" loading="lazy" decoding="async" alt="Manos tatuadas sobre el respaldo del sillón" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-color.jpg" data-w="1179" data-h="1493" data-cap="El guardián de la silla"><img src="/img/esfera-6.webp" width="360" height="360" loading="lazy" decoding="async" alt="Gato negro recostado en el sillón" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-bn.jpg" data-w="1179" data-h="1460" data-cap="Frida Leal, retrato"><img src="/img/esfera-1.webp" width="360" height="360" loading="lazy" decoding="async" alt="Retrato en blanco y negro de Frida Leal" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-color.jpg" data-w="1179" data-h="1493" data-cap="Frida Leal, perfil"><img src="/img/esfera-5.webp" width="360" height="360" loading="lazy" decoding="async" alt="Frida Leal de perfil con maquillaje de calavera" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-color.jpg" data-w="1179" data-h="1493" data-cap="El estudio"><img src="/img/esfera-9.webp" width="360" height="360" loading="lazy" decoding="async" alt="Focos y espejo del estudio" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-bn.jpg" data-w="1179" data-h="1460" data-cap="Espejo y focos"><img src="/img/esfera-4.webp" width="360" height="360" loading="lazy" decoding="async" alt="Frida Leal frente al espejo iluminado" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-color.jpg" data-w="1179" data-h="1493" data-cap="Luz de tarde"><img src="/img/esfera-8.webp" width="360" height="360" loading="lazy" decoding="async" alt="Ventana del estudio con luz de tarde" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-bn.jpg" data-w="1179" data-h="1460" data-cap="El sillón"><img src="/img/esfera-3.webp" width="360" height="360" loading="lazy" decoding="async" alt="Respaldo de cuero del sillón de barbero" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-color.jpg" data-w="1179" data-h="1493" data-cap="Reloj y tinta"><img src="/img/esfera-7.webp" width="360" height="360" loading="lazy" decoding="async" alt="Mano tatuada con reloj sobre el sillón" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-bn.jpg" data-w="1179" data-h="1460" data-cap="Manos de oficio"><img src="/img/esfera-2.webp" width="360" height="360" loading="lazy" decoding="async" alt="Manos tatuadas sobre el respaldo del sillón" draggable="false" /></button>
+              <button type="button" class="sphere__tile" data-tile data-zoom="img/frida-color.jpg" data-w="1179" data-h="1493" data-cap="El guardián de la silla"><img src="/img/esfera-6.webp" width="360" height="360" loading="lazy" decoding="async" alt="Gato negro recostado en el sillón" draggable="false" /></button>
+          </div>
         </div>
-
-        <p class="gallery__more" data-reveal>
-          <span>El trabajo del día a día vive en redes.</span>
-          <a class="link" href="https://www.instagram.com/fridaleal1997/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+        <p class="sphere__hint" data-reveal>
+          <span>Arrastra para girar · toca una foto para ampliarla</span>
+          <a class="link" href="https://www.instagram.com/fridaleal1997/" target="_blank" rel="noopener">Más en Instagram</a>
           <a class="link" href="https://www.tiktok.com/@la_fri_leal_" target="_blank" rel="noopener">TikTok</a>
         </p>
       </section>
 
+      <!-- ═════════ HERRAMIENTAS ═════════ -->
+      <section class="tools" data-theme="light" aria-labelledby="herramientas-t">
+        <div class="tools__stage">
+          <canvas class="tools__canvas" data-clipper aria-hidden="true"></canvas>
+          <ul class="tools__labels" data-clipper-labels aria-hidden="true">
+            <li data-part="fija"><i></i>Cuchilla fija</li>
+            <li data-part="movil"><i></i>Cuchilla móvil</li>
+            <li data-part="cabezal"><i></i>Cabezal</li>
+            <li data-part="motor"><i></i>Motor</li>
+            <li data-part="bateria"><i></i>Batería</li>
+            <li data-part="carcasa"><i></i>Carcasa</li>
+          </ul>
+          <div class="tools__copy tools__copy--a" data-tools-a>
+            <p class="label"><span>04</span> Herramientas</p>
+            <h2 class="display" id="herramientas-t">El oficio, <em>pieza por pieza.</em></h2>
+          </div>
+          <div class="tools__copy tools__copy--b" data-tools-b>
+            <p class="tools__big">Máquina, navaja, shaving gel y <em>toalla caliente.</em></p>
+            <a class="btn" href="#servicios"><span>Ver paquetes</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═════════ SERVICIOS ═════════ -->
+      <section class="services" id="servicios" data-theme="dark" aria-labelledby="servicios-t">
+        <header class="services__head">
+          <p class="label" data-reveal><span>05</span> Paquetes</p>
+          <h2 class="display display--xl" id="servicios-t" data-lines>El <em>menú.</em></h2>
+        </header>
+
+        <ul class="services__list">
+          <li class="service" data-service>
+            <span class="service__num">01</span>
+            <h3 class="service__name"><small>Paquete</small>Express Leal</h3>
+            <ul class="service__desc"><li>Corte clásico</li><li>Delineado de cejas</li><li>Masaje relajante</li></ul>
+            <span class="service__price">$135</span>
+            <a class="service__cta" href="https://wa.me/529991022110?text=Hola%20Frida%2C%20quiero%20agendar%20el%20Paquete%20Express%20Leal." target="_blank" rel="noopener" aria-label="Agendar Paquete Express Leal por WhatsApp"><span>Agendar</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9" /></svg></a>
+          </li>
+          <li class="service" data-service>
+            <span class="service__num">02</span>
+            <h3 class="service__name"><small>Paquete</small>Barbería Leal</h3>
+            <ul class="service__desc"><li>Corte moderno</li><li>Toalla caliente</li><li>Limpieza facial ligera</li><li>Delineado de cejas</li></ul>
+            <span class="service__price">$150</span>
+            <a class="service__cta" href="https://wa.me/529991022110?text=Hola%20Frida%2C%20quiero%20agendar%20el%20Paquete%20Barber%C3%ADa%20Leal." target="_blank" rel="noopener" aria-label="Agendar Paquete Barbería Leal por WhatsApp"><span>Agendar</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9" /></svg></a>
+          </li>
+          <li class="service" data-service>
+            <span class="service__num">03</span>
+            <h3 class="service__name"><small>Paquete</small>Flashh Leal</h3>
+            <ul class="service__desc"><li>Corte moderno o clásico / rasurado</li><li>Máquina + navaja + shaving gel</li><li>Toalla</li></ul>
+            <span class="service__price">$180</span>
+            <a class="service__cta" href="https://wa.me/529991022110?text=Hola%20Frida%2C%20quiero%20agendar%20el%20Paquete%20Flashh%20Leal." target="_blank" rel="noopener" aria-label="Agendar Paquete Flashh Leal por WhatsApp"><span>Agendar</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9" /></svg></a>
+          </li>
+          <li class="service" data-service>
+            <span class="service__num">04</span>
+            <h3 class="service__name"><small>Paquete</small>Clásico Leal</h3>
+            <ul class="service__desc"><li>Corte moderno o clásico / rasurado tradicional o completo</li><li>Afeitado tradicional</li></ul>
+            <span class="service__price">$200</span>
+            <a class="service__cta" href="https://wa.me/529991022110?text=Hola%20Frida%2C%20quiero%20agendar%20el%20Paquete%20Cl%C3%A1sico%20Leal." target="_blank" rel="noopener" aria-label="Agendar Paquete Clásico Leal por WhatsApp"><span>Agendar</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9" /></svg></a>
+          </li>
+        </ul>
+
+        <div class="extras" data-reveal>
+          <p class="label">Servicios adicionales</p>
+          <dl>
+            <div><dt>Facial (limpieza profunda)</dt><dd>$180</dd></div>
+            <div><dt>Mascarilla</dt><dd>$35</dd></div>
+          </dl>
+        </div>
+
+        <p class="services__note" data-reveal>
+          Precios en pesos mexicanos. Se acepta tarjeta de débito y pago móvil sin contacto (NFC).
+        </p>
+      </section>
+
       <!-- ═════════ ESTUDIO ═════════ -->
-      <section class="studio" id="estudio" data-theme="dark" aria-labelledby="estudio-t">
+      <section class="studio" id="estudio" data-theme="light" aria-labelledby="estudio-t">
         <div class="studio__head">
-          <p class="label" data-reveal><span>05</span> El estudio</p>
+          <p class="label" data-reveal><span>06</span> El estudio</p>
           <h2 class="display" id="estudio-t" data-lines>Un lugar para <em>quedarse</em> un rato.</h2>
           <p class="studio__lead" data-reveal>Todas las personas son bienvenidas. Así de simple.</p>
+          <figure class="studio__photo" data-clip>
+            <picture>
+              <source type="image/webp" srcset="/img/frida-color-640.webp 640w, /img/frida-color-960.webp 960w" sizes="(min-width: 900px) 30vw, 70vw" />
+              <img src="/img/frida-color.jpg" width="1179" height="1493" loading="lazy" decoding="async" data-parallax alt="Frida Leal en su estudio con luz de tarde, junto al sillón donde descansa un gato negro." />
+            </picture>
+          </figure>
         </div>
         <ul class="studio__list">
           <li data-reveal><span>i</span>Espacio climatizado</li>
@@ -451,7 +392,7 @@
       <!-- ═════════ VISITA ═════════ -->
       <section class="visit" id="visita" data-theme="light" aria-labelledby="visita-t">
         <div class="visit__info">
-          <p class="label" data-reveal><span>06</span> Visita</p>
+          <p class="label" data-reveal><span>07</span> Visita</p>
           <h2 class="display" id="visita-t" data-lines>Calle 34 <em>#295,</em> Centro.</h2>
           <address class="visit__address" data-reveal>
             Entre calles 29 y 31, Colonia Centro<br />97540 Izamal, Yucatán
@@ -510,19 +451,49 @@
 
       <!-- ═════════ CIERRE ═════════ -->
       <section class="closing" id="reservar" data-theme="dark" aria-labelledby="cierre-t">
-        <p class="label" data-reveal><span>07</span> Reservaciones</p>
+        <p class="label" data-reveal><span>08</span> Reservaciones</p>
         <h2 class="closing__title" id="cierre-t" data-lines>Tu silla <em>te espera.</em></h2>
-        <p class="closing__sub" data-reveal>Un mensaje basta. Dinos qué servicio buscas y a qué hora te queda mejor.</p>
-        <div class="closing__actions" data-reveal>
-          <a
-            class="btn btn--accent btn--big"
-            href="https://wa.me/529991022110?text=Hola%20Frida%2C%20quiero%20agendar%20una%20cita."
-            target="_blank"
-            rel="noopener"
-            ><span>Agendar por WhatsApp</span
-            ><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg
-          ></a>
-          <a class="link" href="tel:+529991022110">o llama al +52 999 102 2110</a>
+        <div class="closing__grid">
+          <div class="closing__side" data-reveal>
+            <p class="closing__sub">Elige paquete y horario. El mensaje se arma solo y se envía por WhatsApp.</p>
+            <a class="link" href="tel:+529991022110">o llama al +52 999 102 2110</a>
+          </div>
+
+          <form class="booking" data-booking data-reveal>
+            <label class="field">
+              <span>Tu nombre</span>
+              <input type="text" name="nombre" autocomplete="given-name" required placeholder="¿Cómo te llamas?" />
+            </label>
+            <label class="field">
+              <span>Paquete</span>
+              <select name="paquete" required>
+                <option value="Paquete Express Leal ($135)">Express Leal — $135</option>
+                <option value="Paquete Barbería Leal ($150)">Barbería Leal — $150</option>
+                <option value="Paquete Flashh Leal ($180)">Flashh Leal — $180</option>
+                <option value="Paquete Clásico Leal ($200)">Clásico Leal — $200</option>
+                <option value="Facial, limpieza profunda ($180)">Facial (limpieza profunda) — $180</option>
+                <option value="Mascarilla ($35)">Mascarilla — $35</option>
+              </select>
+            </label>
+            <div class="booking__row">
+              <label class="field">
+                <span>Día</span>
+                <input type="date" name="dia" required />
+              </label>
+              <label class="field">
+                <span>Hora</span>
+                <select name="hora" required>
+                  <option>12:00 p. m. (solo sábado)</option>
+                  <option selected>1:00 p. m.</option>
+                  <option>2:00 p. m.</option>
+                  <option>3:00 p. m.</option>
+                  <option>4:00 p. m.</option>
+                </select>
+              </label>
+            </div>
+            <p class="booking__error" data-booking-error role="alert" hidden></p>
+            <button class="btn btn--accent btn--big" type="submit"><span>Enviar por WhatsApp</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button>
+          </form>
         </div>
       </section>
     </main>

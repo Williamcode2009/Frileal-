@@ -1,7 +1,11 @@
 # Frida Leal Barber
 
 Sitio web de **Frida Leal Barber · Barbería Leal** (Izamal, Yucatán).
-Una sola página, estática, construida con Vite + GSAP (ScrollTrigger, SplitText) + Lenis.
+Una sola página, estática, construida con Vite + GSAP (ScrollTrigger, SplitText) + Three.js + Lenis.
+
+La página se narra con el scroll: un poste de barbero 3D que se desenrolla en cintas, una esfera de
+fotografías que se puede girar, una máquina en despiece, el menú de paquetes y un formulario que
+arma el mensaje de WhatsApp.
 
 ## Uso
 
@@ -18,7 +22,10 @@ npm run preview   # revisar la versión de producción
 | --- | --- |
 | `index.html` | Todo el contenido: textos, servicios, horarios, enlaces, SEO |
 | `src/style.css` | Sistema visual (paleta, tipografía, composición) |
-| `src/main.js` | Animaciones GSAP, menú, visor de fotos, horario en vivo |
+| `src/main.js` | Líneas de tiempo GSAP, menú, visor de fotos, formulario, horario en vivo |
+| `src/three/pole.js` | Poste 3D y cintas (hero) |
+| `src/three/clipper.js` | Máquina en despiece |
+| `src/sphere.js` | Esfera de fotografías |
 | `public/img/` | Fotos optimizadas (WebP + JPG) |
 | `fotos-originales/` | Fotos fuente |
 | `scripts/optimizar-imagenes.py` | Regenera `public/img/` desde las originales |
@@ -27,11 +34,11 @@ npm run preview   # revisar la versión de producción
 
 Busca estos comentarios en `index.html`:
 
-1. **Precios** — cada servicio muestra "Consultar". Sustituye el texto dentro de
-   `<span class="service__price">` por el precio real.
-2. **Fotos de cortes** — la galería tiene dos espacios marcados `ESPACIO TEMPORAL`.
-   Coloca la foto en `public/img/` y reemplaza el bloque por un `<button class="shot__frame" …>`
-   como los demás.
+1. **Precios** — están en la sección `SERVICIOS` de `index.html` y en el `<select name="paquete">`
+   del formulario. Si cambian, actualiza ambos.
+2. **Fotos de cortes** — la esfera usa 9 recortes de las dos fotos reales, repetidos. Para añadir
+   fotos nuevas, agrégalas a `TILES` en `scripts/optimizar-imagenes.py` (o guarda cuadrados de 360 px
+   como `public/img/esfera-N.webp`) y cambia el `src` de los botones `sphere__tile`.
 3. **Facebook** — el enlace del pie apunta a una búsqueda; cámbialo por la URL exacta de la página.
 4. **Dominio** — al publicar, cambia `og:image` a la URL absoluta
    (ej. `https://tudominio.com/img/og.jpg`) para que la vista previa aparezca al compartir.
